@@ -1,7 +1,7 @@
 import sounddevice as sound
 from kokoro_onnx import Kokoro
 import time
-good_answers=["yes", "yup", "fine", "ok", "yeah"]
+good_answers=["yes", "yup", "fine", "ok", "yes","yeah"]
 kokoro = Kokoro("kokoro-v1.0.onnx","voices-v1.0.bin" )
 parent_answer = input("Can I have my candy now")
 while parent_answer.lower() not in good_answers:
